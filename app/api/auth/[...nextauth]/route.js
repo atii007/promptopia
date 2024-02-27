@@ -10,6 +10,11 @@ const handler = NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  pages: {
+    // your existing pages configuration
+    providers: "/api/auth/providers",
+    session: "/api/auth/session",
+  },
   callbacks: {
     async session({ session }) {
       const sessionUser = await User.findOne({
