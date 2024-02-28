@@ -1,11 +1,9 @@
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 import "@styles/globals.css";
+<link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export const metadata = {
-  openGraph: {
-    images: `/assets/images/logo.svg`,
-  },
   title: "Promptopia",
   description: "Discover & Share AI Prompts",
 };
